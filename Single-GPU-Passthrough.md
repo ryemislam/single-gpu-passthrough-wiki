@@ -1,4 +1,4 @@
-# Single GPU Passthrough
+# Vision
 The goal of this project is to automate the process of creating a 'passthrough' virtual machine, i.e. one where physical devices such as the gpu can be passed to the virtual machine.
 
 Ideally if this project achieves its goals it should be as simple as the following to get a working gpu passthrough vm:
