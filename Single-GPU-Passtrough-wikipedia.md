@@ -32,7 +32,7 @@ VT-X = Enabled
 
 **GENERAL **
 
-Install you're distro. 
-Update you're distro
+- Install you're distro. 
+- Update you're distro
 
 
