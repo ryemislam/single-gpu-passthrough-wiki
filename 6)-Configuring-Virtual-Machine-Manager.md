@@ -53,7 +53,13 @@ We do NOT attached the GPU and HDMI sound on this moment.
 Bootup the VM and install windows in de VM with virtio drivers. 
 
 
+![Screenshot_win10-7](uploads/dfa4828fea018d3f441cc2566ab37fc0/Screenshot_win10-7.png)
 
+Choice load driver 
+
+![Screenshot_win10-9](uploads/ef14ba6add48683e5d43e81724cb8d4d/Screenshot_win10-9.png)
+
+Choice the right filder on the mounted virtio ISO.
 
 
 
