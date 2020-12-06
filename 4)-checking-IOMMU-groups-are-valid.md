@@ -107,3 +107,29 @@ output in my case:
 	Kernel modules: snd_hda_intel
 
 
+
+**GENERAL**
+
+Watch out for the IOMMU group  in my case group 29
+
+lspci -nnk -d 10de:1b06
+lspci -nnk -d 10de:10ef
+
+
+29:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP102 [GeForce GTX 1080 Ti] [10de:1b06] (rev a1)
+	Subsystem: eVga.com. Corp. Device [3842:6593]
+	Kernel driver in use: nvidia
+	Kernel modules: nouveau, nvidia_drm, nvidia
+29:00.1 Audio device [0403]: NVIDIA Corporation GP102 HDMI Audio Controller [10de:10ef] (rev a1)
+	Subsystem: eVga.com. Corp. Device [3842:6593]
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+
+
+
+
+
+
+
+
