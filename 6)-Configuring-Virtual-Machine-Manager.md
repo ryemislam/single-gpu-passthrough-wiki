@@ -23,9 +23,6 @@ Choice for UEFI firmware:
 
 /usr/share/qemu/ovmf-x86_64.bin
 
-![2020-06-13_14-31](uploads/bd870eebfca1c223fe7831fa65cb5713/2020-06-13_14-31.png)
-
-
 ![2020-06-13_14-31_1](uploads/1581b6dd65be8cb7ea01e8aa9b1f12ab/2020-06-13_14-31_1.png)
 
 
