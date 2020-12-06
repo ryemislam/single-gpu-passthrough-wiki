@@ -25,6 +25,9 @@ Choice for UEFI firmware:
 
 ![2020-06-13_14-31_1](uploads/1581b6dd65be8cb7ea01e8aa9b1f12ab/2020-06-13_14-31_1.png)
 
+Choice the max Logical Host CPU's
+Choice Topology
+
 ![2020-06-13_14-40](uploads/8b61113a13e524d1e007680e46a2dff0/2020-06-13_14-40.png)
 
 Choice Memory 8GB or more
