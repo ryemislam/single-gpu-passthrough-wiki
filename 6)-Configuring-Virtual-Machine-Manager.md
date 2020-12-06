@@ -32,7 +32,7 @@ Choice Topology
 
 Choice Memory 8GB or more
 
-![2020-06-13_14-40](uploads/64567af5bade37f3221eb09cab20a12b/2020-06-13_14-40.png)
+![2020-06-13_14-43](uploads/6531691d3ba60e44e86ca675cb018879/2020-06-13_14-43.png)
 
 Choice Virtio 
 Choice the option Cache mode writeback
