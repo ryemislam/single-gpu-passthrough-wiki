@@ -33,5 +33,6 @@ VT-X = Enabled
 
 - Install you're distro. 
 - Update you're distro
+- Update or install when need the nvidia/AMD drivers
 
 
