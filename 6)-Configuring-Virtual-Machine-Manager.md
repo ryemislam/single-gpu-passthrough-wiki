@@ -32,6 +32,11 @@ Choice Topology
 
 Choice Memory 8GB or more
 
+![2020-06-13_14-40](uploads/64567af5bade37f3221eb09cab20a12b/2020-06-13_14-40.png)
+
+Choice Virtio 
+Choice the option Cache mode writeback
+
 ![image](uploads/dc35b091e4fc5b0b333e72d86d310a1f/image.png)
 
 Attach the 2 iso's of windows 10 and virtio to SATA CDROM
