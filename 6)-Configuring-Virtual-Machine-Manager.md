@@ -59,7 +59,7 @@ Choice load driver
 
 ![Screenshot_win10-9](uploads/ef14ba6add48683e5d43e81724cb8d4d/Screenshot_win10-9.png)
 
-Choice the right filder on the mounted virtio ISO.
+Choice the right folder on the mounted virtio ISO.
 
 
 
