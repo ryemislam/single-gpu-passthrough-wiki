@@ -26,7 +26,7 @@
 - SVM mode = enabled
 
 **INTEL:**
-
+VT-D = Enabled
 VT-X = Enabled
 
 **GENERAL**
