@@ -66,7 +66,7 @@ Save
 
 **Placing the ROM:**
 
-**ARCH / FEDORA **
+**ARCH / FEDORA**
 
 
 - sudo mkdir /var/lib/libvirt/vbios
