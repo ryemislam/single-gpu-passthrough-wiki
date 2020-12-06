@@ -16,21 +16,20 @@
 
 **Preperations:**
 
-
--Update youre UEFI or BIOS to the latest version.
--Check in the UEFI/BIOS that you're videocard wil be detected
+- Update youre UEFI or BIOS to the latest version.
+- Check in the UEFI/BIOS that you're videocard wil be detected
 
 **AMD:**
 
-IOMMU = enabled
-NX mode = enabled
-SVM mode = enabled
+- IOMMU = enabled
+- NX mode = enabled
+- SVM mode = enabled
 
 **INTEL:**
 
 VT-X = Enabled
 
-**GENERAL **
+**GENERAL**
 
 - Install you're distro. 
 - Update you're distro
