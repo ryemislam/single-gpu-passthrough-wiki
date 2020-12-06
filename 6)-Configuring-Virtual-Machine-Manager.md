@@ -61,6 +61,12 @@ Choice load driver
 
 Choice the right folder on the mounted virtio ISO.
 
+![Screenshot_win10-91](uploads/86c041a58d70d30d10543de56b23ff2d/Screenshot_win10-91.png)
+![Screenshot_win10-92](uploads/9d1137d7749b470aba734baca9e268ac/Screenshot_win10-92.png)
+
+The virtio drive is now visible.
+
+Install windows like normal. 
 
 
 
