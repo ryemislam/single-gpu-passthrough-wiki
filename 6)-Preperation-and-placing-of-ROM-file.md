@@ -10,7 +10,7 @@ install GPU-Z
 save you're bios
 
 
-OTHER OPTION:
+OTHER OPTIONS 1:
 
 Download the ROM
 https://www.techpowerup.com/vgabios/
@@ -64,14 +64,36 @@ Save
 
 
 
+**Placing the ROM:**
+
+**ARCH / FEDORA **
 
 
+- sudo mkdir /var/lib/libvirt/vbios
+- place the rom in above directory with 
+- cd /var/lib/libvirt/vbios
+- sudo chmod -R 660 <ROMFILE>rom
+- sudo chown username:username <ROMFILE>.rom
+
+**POPOS! / UBUNTU / Linux Mint / Manjaro / OpenSUSE (other systems with apparmor)**
+
+- sudo mkdir /usr/share/vgabios
+- place the rom in above directory with 
+- cd /usr/share/vgabios
+- sudo chmod -R 660<ROMFILE>.rom
+- sudo chown username:username <ROMFILE>.rom
+
+**OpenSuse**
+
+optional:
+sudo groupadd cybermage
 
 
+The result has to be like:
 
-
-
-
+ls -tlr
+total 256
+-rw-rw---- 1 username username 260096 15 nov 00:43 GP102.rom
 
 
 
