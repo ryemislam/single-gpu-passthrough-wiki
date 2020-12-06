@@ -1,4 +1,4 @@
-**WARNING only needed for serie 10 van nvidia. **
+**WARNING only needed for serie 10 van nvidia.**
 
 EASY WAY
 
