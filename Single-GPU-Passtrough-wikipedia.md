@@ -5,20 +5,34 @@
 **Warning youre GPU has to support UEFI.**
 
 
-Preperations:
+
+
+
+
+
+
+
+
+
+**Preperations:**
+
 
 -Update youre UEFI or BIOS to the latest version.
 -Check in the UEFI/BIOS that you're videocard wil be detected
 
-AMD:
+**AMD:**
 
 IOMMU = enabled
 NX mode = enabled
 SVM mode = enabled
 
-INTEL:
+**INTEL:**
 
 VT-X = Enabled
 
+**GENERAL **
+
+Install you're distro. 
+Update you're distro
 
 
