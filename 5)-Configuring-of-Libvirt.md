@@ -61,7 +61,7 @@ Note specific:
 Linux Mint
 
 sudo usermod -a  -G kvm "you're username"
-sudo usermod -a  -G libvirtd "you're usernam"
+sudo usermod -a  -G libvirtd "you're username"
 
 
 
