@@ -50,8 +50,8 @@ sudo systemctl enable libvirtd
 sudo nano /etc/libvirt/qemu.conf
 
 edit the follow lines
-#user = "root" naar user = "you're username"
-#group = "root" naar group = "you're username"
+#user = "root" to user = "you're username"
+#group = "root" to group = "you're username"
 
 sudo systemctl restart libvirtd
 
