@@ -43,7 +43,7 @@ Attach the 2 iso's of windows 10 and virtio to SATA CDROM
 
 ![2020-06-13_14-44](uploads/929e78368ad62ae07b3dd28aab334d50/2020-06-13_14-44.png)
 
-Choice 'NAT network'
+Choice 'Virtual network 'default': NAT'
 Choice virtio
 
 
