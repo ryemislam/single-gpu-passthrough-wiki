@@ -11,13 +11,13 @@ Optional only needed when you need a rom file.
 </hostdev>
 
 
-**ARCH / FEDORA **
+**ARCH / FEDORA**
 
 `add this line <rom file='/var/lib/libvirt/vbios/GP102.rom'/> `
 
 **POPOS! / Ubuntu / Linux Mint / MANJARO / OPENSUSE (or other apparmor distro)**
 
-add this line <rom file="/usr/share/vgabios/GP102.rom"/> 
+`add this line <rom file="/usr/share/vgabios/GP102.rom"/> `
 
 
 GENERAL:
