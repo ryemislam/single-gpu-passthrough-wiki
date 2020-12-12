@@ -6,6 +6,7 @@ virsh edit win10
 
 
 
+```
   </os>
   <features>
     <acpi/>
@@ -21,3 +22,4 @@ virsh edit win10
     </kvm>
     <vmport state='off'/>
     <ioapic driver='kvm'/>
+```
