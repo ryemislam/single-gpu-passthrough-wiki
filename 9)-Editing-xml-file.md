@@ -24,19 +24,23 @@ virsh edit win10
 
 edit the following line with AMD CPU:
 
+```
   </features>
   <cpu mode='host-passthrough' check='none'>
     <topology sockets='1' cores='6' threads='2'/>
     <feature policy='require' name='topoext'/>
   </cpu>
+```
 
 edit the following line with INTEL CPU:  
 
+```
 </features>
   <cpu mode='host-passthrough' check='none'>
     <topology sockets='1' cores='6' threads='2'/>
     <feature policy='disable' name='smep'/>
   </cpu>
+```
 
 NOTE:
 
