@@ -1,4 +1,4 @@
-**ARCH LINUX / MANJARO / FEDORA / LINUX MINT / OPENSUSE**
+**GENERAL**
 
 Use this script:
 
