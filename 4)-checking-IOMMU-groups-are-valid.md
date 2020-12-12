@@ -2,6 +2,7 @@
 
 Use this script:
 
+```
 #!/bin/bash
 shopt -s nullglob
 for g in /sys/kernel/iommu_groups/*; do
@@ -10,6 +11,7 @@ for g in /sys/kernel/iommu_groups/*; do
         echo -e "\t$(lspci -nns ${d##*/})"
     done;
 done;
+```
 
 Alternative:
 
