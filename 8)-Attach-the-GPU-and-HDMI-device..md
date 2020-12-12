@@ -13,7 +13,7 @@ Optional only needed when you need a rom file.
 
 **ARCH / FEDORA **
 
-add this line <rom file='/var/lib/libvirt/vbios/GP102.rom'/> 
+`add this line <rom file='/var/lib/libvirt/vbios/GP102.rom'/> `
 
 **POPOS! / Ubuntu / Linux Mint / MANJARO / OPENSUSE (or other apparmor distro)**
 
