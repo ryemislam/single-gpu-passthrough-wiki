@@ -56,6 +56,8 @@ sudo systemctl start gdm
 
 Patch the rom with a hexeditor. Like okteta. Looking with Char for video.
 
+Note please turn on overwrite mode! (Edit / Overwrite mode or press insert)
+
 
 ![image](uploads/b56e21f062af2d86374656bb5df541d2/image.png)
 
