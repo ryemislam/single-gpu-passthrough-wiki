@@ -4,7 +4,7 @@ sudo su
 export EDITOR=nano
 virsh edit win10
 
-
+Edit te following lines:
 
 ```
   </os>
