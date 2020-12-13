@@ -88,7 +88,7 @@ Save
 **OpenSuse**
 
 optional:
-sudo groupadd cybermage
+sudo groupadd you're username
 
 
 The result has to be like:
