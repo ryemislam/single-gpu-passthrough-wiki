@@ -74,7 +74,7 @@ Save
 - sudo mkdir /var/lib/libvirt/vbios
 - place the rom in above directory with 
 - cd /var/lib/libvirt/vbios
-- sudo chmod -R 660 <ROMFILE>rom
+- sudo chmod -R 660 `<ROMFILE>`rom
 - sudo chown username:username <ROMFILE>.rom
 
 **POPOS! / UBUNTU / Linux Mint / Manjaro / OpenSUSE (other systems with apparmor)**
