@@ -83,7 +83,7 @@ Save
 - place the rom in above directory with 
 - cd /usr/share/vgabios
 - sudo chmod -R 660<ROMFILE>.rom
-- sudo chown username:username <ROMFILE>.rom
+- sudo chown username:username `<ROMFILE>`.rom
 
 **OpenSuse**
 
