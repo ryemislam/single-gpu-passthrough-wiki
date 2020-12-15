@@ -22,6 +22,11 @@ sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils vir
 sudo zypper in libvirt libvirt-client libvirt-daemon virt-manager virt-install virt-viewer qemu qemu-kvm qemu-ovmf-x86_64 qemu-tools
 
 
+
+
+
+
+
 **This step is need to use Virtual Machine Manager under user rights and adding logs**
 
 
