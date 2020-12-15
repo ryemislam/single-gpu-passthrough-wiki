@@ -75,7 +75,7 @@ Save
 - place the rom in above directory with 
 - cd /var/lib/libvirt/vbios
 - sudo chmod -R 660 `<ROMFILE>`rom
-- sudo chown username:username <ROMFILE>.rom
+- sudo chown username:username `<ROMFILE>`.rom
 
 **POPOS! / UBUNTU / Linux Mint / Manjaro / OpenSUSE (other systems with apparmor)**
 
@@ -95,7 +95,7 @@ The result has to be like:
 
 ls -tlr
 total 256
--rw-rw---- 1 username username 260096 15 nov 00:43 GP102.rom
+-rw-rw---- 1 username username 260096 15 nov 00:43 <romfile>.rom
 
 
 
