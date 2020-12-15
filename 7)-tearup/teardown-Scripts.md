@@ -17,7 +17,7 @@ Check the scripts are in place.
 /bin/vfio-teardown.sh
 /etc/libvirt/hooks/qemu
 
-NOTE:
+**NOTE:**
 
 The place of the log files are
 
