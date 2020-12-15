@@ -10,7 +10,7 @@ Optional only needed when you need a rom file.
 </hostdev>
 
 
-**ARCH / FEDORA**
+**ARCH / FEDORA** (or other distro with out apparmor like selinux)
 
 ![image](uploads/ec7bccb488dc1ef5c4ea16034e1d9055/image.png)
 
