@@ -1,4 +1,4 @@
-**ONLY WITH NVIDIA**
+**GENERAL**
 
 sudo su
 export EDITOR=nano
