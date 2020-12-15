@@ -20,8 +20,6 @@ virsh edit win10
     <vmport state='off'/>
     <ioapic driver='kvm'/>
 
-**GENERAL**
-
 edit the following line with AMD CPU:
 
 ```
