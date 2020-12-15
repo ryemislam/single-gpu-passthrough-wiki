@@ -95,7 +95,7 @@ The result has to be like:
 
 ls -tlr
 total 256
--rw-rw---- 1 username username 260096 15 nov 00:43 <romfile>.rom
+-rw-rw---- 1 username username 260096 15 nov 00:43 `<romfile>`.rom
 
 
 
