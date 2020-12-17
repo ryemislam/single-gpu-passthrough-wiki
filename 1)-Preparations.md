@@ -2,7 +2,7 @@
 
 **Warning this guide doesn't work with 1st generation ryzen 5 CPU's.**
 
-**Warning youre GPU has to support UEFI.**
+**Warning you're GPU has to support UEFI.**
 
 
 
