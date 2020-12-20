@@ -8,7 +8,9 @@ Download the latest windows 10 build iso.
 
 **GENERAL:**
 
-**IMPORTANT** choice win10 as vm name because of scripts.
+**IMPORTANT**
+You have to start customize the vm before installation
+choice win10 as vm name because of scripts.
 Choice for Q35 chipset
 Choice for **UEFI firmware**:
 
