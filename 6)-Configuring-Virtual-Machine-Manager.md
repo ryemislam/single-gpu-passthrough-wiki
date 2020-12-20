@@ -48,8 +48,8 @@ Attach the 2 iso's of windows 10 and virtio to SATA CDROM
 Choice 'Virtual network 'default': NAT'
 Choice virtio
 
+**GENERAL:**
 
-GENERAL:
 
 We do NOT attached the GPU and HDMI sound on this moment. 
 Bootup the VM and install windows in de VM with virtio drivers. 
