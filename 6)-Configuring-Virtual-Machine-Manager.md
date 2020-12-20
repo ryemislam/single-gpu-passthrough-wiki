@@ -8,9 +8,9 @@ Download the latest windows 10 build iso.
 
 **GENERAL:**
 
-IMPORTANT choice win10 as vm name because of scripts.
+**IMPORTANT** choice win10 as vm name because of scripts.
 Choice for Q35 chipset
-Choice for UEFI firmware:
+Choice for **UEFI firmware**:
 
 /usr/share/edk2/ovmf/OVMF_CODE.fd
 
