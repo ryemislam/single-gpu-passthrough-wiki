@@ -40,7 +40,7 @@ edit the following line with INTEL CPU:
   </cpu>
 ```
 
-NOTE:
+**NOTE:**
 
 to make snapshots edit the following line to
 
