@@ -25,7 +25,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 **MANJARO**
 
 edit line:
-GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt quit apparmor=1 security=apparmor udev.log_priority=3"
+GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt quiet apparmor=1 security=apparmor udev.log_priority=3"
 
 update grub
 sudo update-grub
