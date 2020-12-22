@@ -63,7 +63,7 @@ sudo systemctl restart libvirtd
 
 
 **Note specific:**
-Linux Mint
+Linux Mint / Ubuntu
 
 sudo usermod -a  -G kvm "you're username"
 sudo usermod -a  -G libvirt "you're username"
