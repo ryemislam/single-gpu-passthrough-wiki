@@ -35,8 +35,8 @@ sudo zypper in libvirt libvirt-client libvirt-daemon virt-manager virt-install v
 sudo nano /etc/libvirt/libvirtd.conf
 
 edit the follow lines:
-unix_sock_group = "libvirt"
-unix_sock_rw_perms = "0770"
+- unix_sock_group = "libvirt"
+- unix_sock_rw_perms = "0770"
 
 
 **IMPORTANT you need this for logs.**
@@ -46,9 +46,9 @@ log_filters="1:qemu"
 log_outputs="1:file:/var/log/libvirt/libvirtd.log"
 
 
-sudo usermod -a -G libvirt $(whoami)
-sudo systemctl start libvirtd
-sudo systemctl enable libvirtd
+- sudo usermod -a -G libvirt $(whoami)
+- sudo systemctl start libvirtd
+- sudo systemctl enable libvirtd
 
 
 
