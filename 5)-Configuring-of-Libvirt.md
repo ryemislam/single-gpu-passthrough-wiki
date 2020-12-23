@@ -34,7 +34,7 @@ sudo zypper in libvirt libvirt-client libvirt-daemon virt-manager virt-install v
 
 sudo nano /etc/libvirt/libvirtd.conf
 
-edit or uncommend the # at the follow lines:
+add or uncommend the # at the follow lines:
 - unix_sock_group = "libvirt"
 - unix_sock_rw_perms = "0770"
 
