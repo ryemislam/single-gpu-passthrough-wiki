@@ -51,15 +51,16 @@ options root=UUID=211de945-3abe-4b4e-87f1-4ec1a062d9b6 ro quiet loglevel=0 syste
 
 **NOTE:**
 
-sudo kernelstub --add-options "kvm.ignore_msrs=1"
-sudo kernelstub --add-options "iommu=pt"
+- sudo kernelstub --add-options "kvm.ignore_msrs=1"
+- sudo kernelstub --add-options "iommu=pt"
+ 
+- and if it is an AMD CPU, use 
+- sudo kernelstub --add-options "amd_iommu=on"
+- sudo kernelstub --add-options "video=efifb:off"
 
-and if it is an AMD CPU, use 
-sudo kernelstub --add-options "amd_iommu=on"
-sudo kernelstub --add-options "video=efifb:off"
+- if it is an Intel CPU, use 
+- sudo kernelstub --add-options "intel_iommu=on"
 
-if it is an Intel CPU, use 
-sudo kernelstub --add-options "intel_iommu=on"
 
 update grub
 sudo bootctl update
