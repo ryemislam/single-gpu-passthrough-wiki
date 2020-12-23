@@ -1,6 +1,7 @@
 Editing GRUB
 
 
+
 **arch / manjaro / fedora / Ubuntu / Linux Mint / OpenSUSE**
 
 sudo nano /etc/default/grub 
@@ -15,6 +16,11 @@ sudo nano /boot/efi/loader/entries/Pop_OS-current.conf
 
 
 **ARCH LINUX:**
+
+- intel_iommu=on for intel cpu's
+- amd_iommu=on for amd cpu's
+
+
 
 edit line:
 GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt"
