@@ -5,7 +5,7 @@
 - virsh edit win10
 
 
-Edit te following lines:
+Edit or add the following lines:
 
 ```
   </os>
