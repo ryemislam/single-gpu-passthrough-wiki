@@ -30,4 +30,7 @@ add this line
 
 Remove spice / qxl stuff in VM
 
+add keyboard and mouse device.
+
+
 
