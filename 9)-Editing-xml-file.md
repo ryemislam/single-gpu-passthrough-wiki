@@ -1,8 +1,8 @@
 **GENERAL**
 
-sudo su
-export EDITOR=nano
-virsh edit win10
+- sudo su
+- export EDITOR=nano
+- virsh edit win10
 
   </os>
   <features>
