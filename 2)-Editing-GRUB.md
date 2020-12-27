@@ -25,7 +25,7 @@ sudo nano /boot/efi/loader/entries/Pop_OS-current.conf
 edit line:
 GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt"
 
-update grub
+- update grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 **MANJARO**
@@ -33,7 +33,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 edit line:
 GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt quiet apparmor=1 security=apparmor udev.log_priority=3"
 
-update grub
+- update grub
 sudo update-grub
 
 **FEDORA**
@@ -41,7 +41,7 @@ sudo update-grub
 edit line:
 GRUB_CMDLINE_LINUX="resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap amd_iommu=on iommu=pt quiet"
 
-update grub
+- update grub
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 
 **POPOS!**
@@ -64,7 +64,7 @@ if it is an Intel CPU, use
 - sudo kernelstub --add-options "intel_iommu=on"
 
 
-update grub
+- update grub
 sudo bootctl update
 
 **Ubuntu / Linux Mint**
@@ -72,7 +72,7 @@ sudo bootctl update
 edit line
 GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt video=efifb:off quiet splash"
 
-update grub
+- update grub
 sudo update-grub
 
 **Opensuse**
