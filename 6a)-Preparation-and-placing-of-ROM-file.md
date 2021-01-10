@@ -41,7 +41,7 @@ chmod nvflash / atiflash
 chmod u+x <nvflash>
 
 execute the following command:
-sudo ./nvflash_linux --save 1080ti.rom
+sudo ./nvflash_linux --save <romfile>.rom
 
 Load the nvida module
 modprobe nvidia
@@ -82,7 +82,8 @@ Save
 - sudo mkdir /usr/share/vgabios
 - place the rom in above directory with 
 - cd /usr/share/vgabios
-- sudo chmod -R 660<ROMFILE>.rom
+- sudo chmod -R 660 
+> <ROMFILE>.rom
 - sudo chown username:username `<ROMFILE>`.rom
 
 **OpenSuse**
