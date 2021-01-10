@@ -46,6 +46,7 @@ Last lines at the end of the file
 - log_outputs="1:file:/var/log/libvirt/libvirtd.log"
 
 
+
 - sudo usermod -a -G libvirt $(whoami)
 - sudo systemctl start libvirtd
 - sudo systemctl enable libvirtd
