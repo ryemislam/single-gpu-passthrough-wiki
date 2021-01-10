@@ -41,9 +41,9 @@ add or uncommend the # off the follow lines:
 
 **IMPORTANT you need this for logs.**
 
-Last lines:
-log_filters="1:qemu"
-log_outputs="1:file:/var/log/libvirt/libvirtd.log"
+Last lines at the end of the file
+- log_filters="1:qemu"
+- log_outputs="1:file:/var/log/libvirt/libvirtd.log"
 
 
 - sudo usermod -a -G libvirt $(whoami)
