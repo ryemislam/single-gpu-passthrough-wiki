@@ -1,4 +1,4 @@
-# Single GPU Passthrough Guide
+# Single GPU Passthrough Community Guide
 
 Welcome to the Single GPU Passthrough guide made by the risingprismtv community!
 
