@@ -7,11 +7,9 @@ Editing GRUB
 - amd_iommu=on for amd cpu's
 
 EXAMPLE OF GRUB
-![image](uploads/a827fb07cae2163c98f8fb132b262d78/image.png)
-
-
-
 - sudo nano /etc/default/grub 
+
+![image](uploads/a827fb07cae2163c98f8fb132b262d78/image.png)
 
 **popos!**
 
