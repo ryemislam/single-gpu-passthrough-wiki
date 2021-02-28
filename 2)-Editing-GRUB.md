@@ -1,5 +1,5 @@
 
-**arch / manjaro / fedora / Ubuntu / Linux Mint / OpenSUSE**
+**ARCH / MANJARO / FEDORA / UBUNTU / LINUX MINT / OPENSUSE**
 
 Editing GRUB
 
