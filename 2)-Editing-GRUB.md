@@ -1,3 +1,6 @@
+
+**arch / manjaro / fedora / Ubuntu / Linux Mint / OpenSUSE**
+
 Editing GRUB
 
 - intel_iommu=on for intel cpu's
@@ -6,7 +9,7 @@ Editing GRUB
 EXAMPLE OF GRUB
 ![image](uploads/a827fb07cae2163c98f8fb132b262d78/image.png)
 
-**arch / manjaro / fedora / Ubuntu / Linux Mint / OpenSUSE**
+
 
 - sudo nano /etc/default/grub 
 
