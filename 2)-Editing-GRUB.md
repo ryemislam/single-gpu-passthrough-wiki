@@ -34,7 +34,7 @@ UPDATE GRUB:
 
 **FEDORA**
 
-edit line:
+EDIT LINE:
 GRUB_CMDLINE_LINUX="resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap amd_iommu=on iommu=pt quiet"
 
 UPDATE GRUB:
