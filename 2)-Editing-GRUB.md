@@ -3,8 +3,8 @@
 
 Editing GRUB
 
-- intel_iommu=on for **intel cpu's**
-- amd_iommu=on for **amd cpu's**
+- **intel_iommu=on** for **intel cpu's**
+- **amd_iommu=on** for **amd cpu's**
 
 EXAMPLE OF GRUB
 - sudo nano /etc/default/grub 
