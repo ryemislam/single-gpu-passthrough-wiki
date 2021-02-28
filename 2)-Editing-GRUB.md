@@ -3,6 +3,9 @@ Editing GRUB
 - intel_iommu=on for intel cpu's
 - amd_iommu=on for amd cpu's
 
+EXAMPLE OF GRUB
+![image](uploads/a827fb07cae2163c98f8fb132b262d78/image.png)
+
 **arch / manjaro / fedora / Ubuntu / Linux Mint / OpenSUSE**
 
 - sudo nano /etc/default/grub 
@@ -10,10 +13,6 @@ Editing GRUB
 **popos!**
 
 - sudo nano /boot/efi/loader/entries/Pop_OS-current.conf  
-
-
-![image](uploads/a827fb07cae2163c98f8fb132b262d78/image.png)
-
 
 
 **ARCH LINUX:**
