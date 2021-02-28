@@ -22,7 +22,7 @@ EDIT LINE:
 GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt"
 
 UPDATE GRUB:
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+- sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 **MANJARO**
 
@@ -60,8 +60,8 @@ if it is an Intel CPU, use
 - sudo kernelstub --add-options "intel_iommu=on"
 
 
-- update grub
-sudo bootctl update
+UPDATE GRUB:
+- sudo bootctl update
 
 **Ubuntu / Linux Mint**
 
