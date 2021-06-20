@@ -1,6 +1,6 @@
-**Warning your configuration and mine can be differ. Therefore, take all the steps with a grain of salt and do not blindly copy-paste the values that I am setting in various configuration files.** 
+**Warming This wiki is intended for experienced linux users.** 
 
-**Warning this guide doesn't work with 1st generation ryzen 5 CPU's.**
+**Warning your configuration and mine can be differ. Therefore, take all the steps with a grain of salt and do not blindly copy-paste the values that I am setting in various configuration files.** 
 
 **Warning you're GPU has to support UEFI.**
 
