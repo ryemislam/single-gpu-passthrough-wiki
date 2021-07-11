@@ -3,8 +3,8 @@
 Editing GRUB
 
 ### Enable IOMMU
-- **intel_iommu=on** for **intel cpu's**
-- **amd_iommu=on** for **amd cpu's**
+Set `intel_iommu=on` or `amd_iommu=on` respective to your system in grub config
+Set `iommu=pt` in grub config for safety reasons
 
 EXAMPLE OF GRUB
 - sudo nano /etc/default/grub 
