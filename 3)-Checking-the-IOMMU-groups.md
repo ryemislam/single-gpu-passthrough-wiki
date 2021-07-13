@@ -1,7 +1,7 @@
 sudo dmesg | grep -i -e DMAR -e IOMMU
 
 Output can be this:
-```
+```S
 [    0.242020] iommu: Default domain type: Translated
 [    0.585240] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
 [    0.585290] pci 0000:00:01.0: Adding to iommu group 0
