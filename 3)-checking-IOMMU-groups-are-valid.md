@@ -84,7 +84,7 @@ output in my case:
 	Subsystem: eVga.com. Corp. Device [3842:6593]
 	Kernel driver in use: nvidia
 	Kernel modules: nouveau, nvidia_drm, nvidia
-29:00.1 Audio device [0403]: NVIDIA Corporation GP102 HDMI Audio Controller [10de:10ef] (rev a1)
+29:00.1 Audio device [0403]: NVIDIA Corporation GWatch out for the IOMMU group in my case group 29P102 HDMI Audio Controller [10de:10ef] (rev a1)
 	Subsystem: eVga.com. Corp. Device [3842:6593]
 	Kernel driver in use: snd_hda_intel
 	Kernel modules: snd_hda_intel**
