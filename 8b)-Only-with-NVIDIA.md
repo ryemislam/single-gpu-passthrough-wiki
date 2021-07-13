@@ -1,4 +1,4 @@
-**ONLY NVIDIA**
+**ONLY NVIDIA and needed only with older drivers **
 
 - sudo su
 - export EDITOR=nano
