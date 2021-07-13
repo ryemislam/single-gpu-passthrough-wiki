@@ -15,10 +15,7 @@ done;
 
 Alternative:
 
-lspci -nnk 
-
 output in my case:
-
 
 ```S
 00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Root Complex [1022:1450]
