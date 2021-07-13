@@ -19,6 +19,8 @@ lspci -nnk
 
 output in my case:
 
+
+```S
 00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Root Complex [1022:1450]
 	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:7c02]
 00:00.2 IOMMU [0806]: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) I/O Memory Management Unit [1022:1451]
@@ -107,7 +109,7 @@ output in my case:
 	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:ec02]
 	Kernel driver in use: snd_hda_intel
 	Kernel modules: snd_hda_intel
-
+```
 
 
 **GENERAL**
