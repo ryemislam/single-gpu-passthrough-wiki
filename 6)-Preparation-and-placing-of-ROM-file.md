@@ -1,4 +1,4 @@
-**WARNING needed for nvidia card.**
+**Most time needed with nvidia card and sometimes with AMD cards.**
 
 EASY WAY
 
