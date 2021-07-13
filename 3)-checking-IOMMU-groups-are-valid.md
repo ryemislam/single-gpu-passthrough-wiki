@@ -82,7 +82,7 @@ output in my case:
 	Subsystem: Renesas Technology Corp. uPD720201 USB 3.0 Host Controller [1912:0014]
 	Kernel driver in use: xhci_hcd
 	Kernel modules: xhci_pci
-**29:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP102 [GeForce GTX 1080 Ti] [10de:1b06] (rev a1)
+29:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP102 [GeForce GTX 1080 Ti] [10de:1b06] (rev a1)
 	Subsystem: eVga.com. Corp. Device [3842:6593]
 	Kernel driver in use: nvidia
 	Kernel modules: nouveau, nvidia_drm, nvidia
@@ -119,7 +119,7 @@ Watch out for the IOMMU group  in my case group 29
 lspci -nnk -d 10de:1b06
 lspci -nnk -d 10de:10ef
 
-
+```S
 29:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP102 [GeForce GTX 1080 Ti] [10de:1b06] (rev a1)
 	Subsystem: eVga.com. Corp. Device [3842:6593]
 	Kernel driver in use: nvidia
@@ -128,7 +128,7 @@ lspci -nnk -d 10de:10ef
 	Subsystem: eVga.com. Corp. Device [3842:6593]
 	Kernel driver in use: snd_hda_intel
 	Kernel modules: snd_hda_intel
-
+```
 
 
 
