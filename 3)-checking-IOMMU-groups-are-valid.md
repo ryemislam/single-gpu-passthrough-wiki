@@ -89,7 +89,7 @@ output in my case:
 29:00.1 Audio device [0403]: NVIDIA Corporation GWatch out for the IOMMU group in my case group 29P102 HDMI Audio Controller [10de:10ef] (rev a1)
 	Subsystem: eVga.com. Corp. Device [3842:6593]
 	Kernel driver in use: snd_hda_intel
-	Kernel modules: snd_hda_intel**
+	Kernel modules: snd_hda_intel
 2a:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Zeppelin/Raven/Raven2 PCIe Dummy Function [1022:145a]
 	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:7c02]
 2a:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Platform Security Processor [1022:1456]
