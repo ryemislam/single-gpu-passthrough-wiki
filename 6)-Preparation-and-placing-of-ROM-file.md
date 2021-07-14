@@ -48,7 +48,7 @@ Remove everything above the U. Save
 
 **Placing the ROM:**
 
-**FEDORA**
+**FEDORA (like other systems with selinux)**
 
 - sudo mkdir /var/lib/libvirt/vbios
 - place the rom in above directory with
