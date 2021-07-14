@@ -56,9 +56,8 @@ Remove everything above the U. Save
 * sudo chmod -R 660 `<ROMFILE>`rom
 * sudo chown username:username `<ROMFILE>`.rom
 
-sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/gpu.rom 
-
-sudo restorecon -v /var/lib/libvirt/vbios/gpu.rom
+sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/`<ROMFILE>`.rom 
+sudo restorecon -v /var/lib/libvirt/vbios/`<ROMFILE>`.rom
 
 **GENERAL (like other systems with apparmor)**
 
