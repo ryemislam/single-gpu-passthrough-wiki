@@ -50,16 +50,14 @@ Remove everything above the U. Save
 
 **FEDORA**
 
-* sudo mkdir /var/lib/libvirt/vbios
-* place the rom in above directory with
-* cd /var/lib/libvirt/vbios
-* sudo chmod -R 660 `<ROMFILE>`rom
-* sudo chown username:username `<ROMFILE>`.rom
-
-sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/`<ROMFILE>`.rom 
-
-sudo restorecon -v /var/lib/libvirt/vbios/`<ROMFILE>`.rom
-
+- sudo mkdir /var/lib/libvirt/vbios
+- place the rom in above directory with
+- cd /var/lib/libvirt/vbios
+- sudo chmod -R 660 `<ROMFILE>`rom
+- sudo chown username:username `<ROMFILE>`.rom
+- sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/`<ROMFILE>`.rom 
+- sudo restorecon -v /var/lib/libvirt/vbios/`<ROMFILE>`.rom
+ 
 **GENERAL (like other systems with apparmor)**
 
 * sudo mkdir /usr/share/vgabios
