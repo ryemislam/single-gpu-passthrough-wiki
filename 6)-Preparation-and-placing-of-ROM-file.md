@@ -57,6 +57,7 @@ Remove everything above the U. Save
 * sudo chown username:username `<ROMFILE>`.rom
 
 sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/`<ROMFILE>`.rom 
+
 sudo restorecon -v /var/lib/libvirt/vbios/`<ROMFILE>`.rom
 
 **GENERAL (like other systems with apparmor)**
