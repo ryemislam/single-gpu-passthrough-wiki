@@ -68,8 +68,7 @@ Save
 
 **Placing the ROM:**
 
-**ARCH / FEDORA**
-
+**FEDORA**
 
 - sudo mkdir /var/lib/libvirt/vbios
 - place the rom in above directory with 
@@ -77,7 +76,12 @@ Save
 - sudo chmod -R 660 `<ROMFILE>`rom
 - sudo chown username:username `<ROMFILE>`.rom
 
-**POPOS! / UBUNTU / Linux Mint / Manjaro / OpenSUSE (other systems with apparmor)**
+sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/gpu.rom
+sudo restorecon -v /var/lib/libvirt/vbios/gpu.rom(edited)
+
+
+
+**GENERAL (like other systems with apparmor)**
 
 - sudo mkdir /usr/share/vgabios
 - place the rom in above directory with 
@@ -88,7 +92,7 @@ Save
 **OpenSuse**
 
 optional:
-sudo groupadd you're username
+sudo groupadd your username
 
 
 The result has to be like:
