@@ -2,53 +2,37 @@
 
 EASY WAY
 
-start windows 10
-install GPU-Z
+start windows 10 install GPU-Z
 
 ![image](uploads/fc5745a7ff92aa34bf3db2abb7a8b997/image.png)
 
 save you're bios
 
-
 OTHER OPTIONS 1:
 
-Download the ROM
-https://www.techpowerup.com/vgabios/
-
+Download the ROM [https://www.techpowerup.com/vgabios/](https://www.techpowerup.com/vgabios/)
 
 OTHER OPTIONS 2:
 
-Dumping the rom in linux:
-Download the following:
+Dumping the rom in linux: Download the following:
 
-NVIDIA:
-https://www.techpowerup.com/download/nvidia-nvflash/
+NVIDIA: [https://www.techpowerup.com/download/nvidia-nvflash/](https://www.techpowerup.com/download/nvidia-nvflash/)
 
-AMD:
-https://www.techpowerup.com/download/ati-atiflash/
+AMD: [https://www.techpowerup.com/download/ati-atiflash/](https://www.techpowerup.com/download/ati-atiflash/)
 
+Open a TTY ctrl alt f2 (can be differ from distro)
 
-Open a TTY
-ctrl alt f2 (can be differ from distro)
+Stop the windows manager sudo systemctl stop gdm
 
-Stop the windows manager
-sudo systemctl stop gdm
+unload the nvida module sudo rmod nvidia
 
-unload the nvida module
-sudo rmod nvidia
+chmod nvflash / atiflash chmod u+x
 
-chmod nvflash / atiflash
-chmod u+x <nvflash>
+execute the following command: sudo ./nvflash_linux --save .rom
 
-execute the following command:
-sudo ./nvflash_linux --save <romfile>.rom
+Load the nvida module modprobe nvidia
 
-Load the nvida module
-modprobe nvidia
-
-Load the windows manager
-sudo systemctl start gdm
-
+Load the windows manager sudo systemctl start gdm
 
 **GENERAL**
 
@@ -58,51 +42,36 @@ Patch the rom with a hexeditor. Like okteta. Looking with Char for video.
 
 Note please turn on overwrite mode! (Edit / Overwrite mode or press insert)
 
-
 ![image](uploads/b56e21f062af2d86374656bb5df541d2/image.png)
 
-Remove everything above the U.
-Save 
-
-
+Remove everything above the U. Save
 
 **Placing the ROM:**
 
 **FEDORA**
 
-- sudo mkdir /var/lib/libvirt/vbios
-- place the rom in above directory with 
-- cd /var/lib/libvirt/vbios
-- sudo chmod -R 660 `<ROMFILE>`rom
-- sudo chown username:username `<ROMFILE>`.rom
+* sudo mkdir /var/lib/libvirt/vbios
+* place the rom in above directory with
+* cd /var/lib/libvirt/vbios
+* sudo chmod -R 660 `<ROMFILE>`rom
+* sudo chown username:username `<ROMFILE>`.rom
 
-sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/gpu.rom
+sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/gpu.rom 
+
 sudo restorecon -v /var/lib/libvirt/vbios/gpu.rom(edited)
-
-
 
 **GENERAL (like other systems with apparmor)**
 
-- sudo mkdir /usr/share/vgabios
-- place the rom in above directory with 
-- cd /usr/share/vgabios
-- sudo chmod -R 660 `<ROMFILE>`.rom
-- sudo chown username:username `<ROMFILE>`.rom
+* sudo mkdir /usr/share/vgabios
+* place the rom in above directory with
+* cd /usr/share/vgabios
+* sudo chmod -R 660 `<ROMFILE>`.rom
+* sudo chown username:username `<ROMFILE>`.rom
 
 **OpenSuse**
 
-optional:
-sudo groupadd your username
-
+optional: sudo groupadd your username
 
 The result has to be like:
 
-ls -tlr
-total 256
--rw-rw---- 1 username username 260096 15 nov 00:43 `<romfile>`.rom
-
-
-
-
-
-
+ls -tlr total 256 -rw-rw---- 1 username username 260096 15 nov 00:43 `<romfile>`.rom
