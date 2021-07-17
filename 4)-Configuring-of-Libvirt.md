@@ -56,8 +56,8 @@ Last lines at the end of the file
 sudo nano /etc/libvirt/qemu.conf
 
 edit the follow lines
-#user = "root" to user = "you're username"
-#group = "root" to group = "you're username"
+#user = "root" to user = "your username"
+#group = "root" to group = "your username"
 
 sudo systemctl restart libvirtd
 
