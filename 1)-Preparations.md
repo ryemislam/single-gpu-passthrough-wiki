@@ -19,6 +19,6 @@
 
 **GENERAL**
 
-* Install you're distro.
-* Update you're distro
+* Install your distro
+* Update your distro
 * Update or install when needed the nvidia/AMD drivers
