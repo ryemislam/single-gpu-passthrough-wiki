@@ -1,13 +1,12 @@
-**ONLY NVIDIA and needed only with older drivers **
+\*\*ONLY for NVIDIA and normally only needed with older drivers but I would still just edit it. \*\*
 
 - sudo su
 - export EDITOR=nano
 - virsh edit win10
 
-
 Edit or add the following lines:
 
-```
+```plaintext
   </os>
   <features>
     <acpi/>
