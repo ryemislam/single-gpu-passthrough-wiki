@@ -2,7 +2,7 @@
 
 Use this script:
 
-```
+```plaintext
 #!/bin/bash
 shopt -s nullglob
 for g in /sys/kernel/iommu_groups/*; do
@@ -13,10 +13,9 @@ for g in /sys/kernel/iommu_groups/*; do
 done;
 ```
 
-
 output in my case:
 
-```
+```plaintext
 IOMMU Group 0:
         00:00.0 Host bridge [0600]: Intel Corporation 4th Gen Core Processor DRAM Controller [8086:0c00] (rev 06)
 IOMMU Group 1:
@@ -46,11 +45,6 @@ IOMMU Group 9:
 
 **Group 9**: Is the perfect example how your GPU group should look like in most cases. Some _NVIDIA cards_ will have 4 devices in the group. **MAKE SURE YOU ADD THEM ALL!**
 
+**AMD users** can have there GPU and AUDIO device in different IOMMU group but that is still fine.
+
 **DON'T ADD BRIDGES**
-
-
-
-
-
-
-
