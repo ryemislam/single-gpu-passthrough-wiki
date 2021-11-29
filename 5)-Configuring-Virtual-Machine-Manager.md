@@ -40,12 +40,12 @@ Choose for **UEFI firmware**:
 
 ![image](uploads/dc35b091e4fc5b0b333e72d86d310a1f/image.png)
 
-Attach the 2 iso's of windows 10 and virtio to SATA CDROM
+- Add the 2 ISO's of windows 10 and Virtio to SATA CDROM
 
 ![2020-06-13_14-44](uploads/929e78368ad62ae07b3dd28aab334d50/2020-06-13_14-44.png)
 
 - Set 'Virtual network 'default': NAT'
-- Set virtio
+- Set Virtio
 
 **GENERAL:**
 
@@ -60,12 +60,12 @@ Boot up the VM and install windows in the VM with virtio drivers.
 
 ![Screenshot_win10-9](uploads/ef14ba6add48683e5d43e81724cb8d4d/Screenshot_win10-9.png)
 
-- Choose the right folder on the mounted virtio ISO.
+- Choose the right folder on the mounted Virtio ISO.
 
 ![Screenshot_win10-91](uploads/86c041a58d70d30d10543de56b23ff2d/Screenshot_win10-91.png)
 ![Screenshot_win10-92](uploads/9d1137d7749b470aba734baca9e268ac/Screenshot_win10-92.png)
 
-The _virtio disk_ is now **visible**.
+The **Virtio** disk is now visible.
 
 Install windows like normal. 
 
