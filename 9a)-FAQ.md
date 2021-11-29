@@ -1,3 +1,3 @@
-**Lot of people has reported:** unsupported configuration: pci backend driver 'default' is not supported
+_Lot of people have reported_**:** **unsupported configuration: pci backend driver 'default' is not supported**
 
-**Solution:** Remove your NIC like virtio and passthrough your own network card like you can find in your IOMMU groups.
+**SOLUTION:** Remove your NIC like virtio and passthrough your own network card like you can find in your IOMMU groups.
