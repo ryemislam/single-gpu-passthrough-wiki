@@ -1,4 +1,4 @@
-**Most time needed with nvidia card and sometimes with AMD cards.**
+**Most time needed with NVIDIA card and sometimes with AMD cards.**
 
 EASY WAY
 
@@ -6,33 +6,45 @@ start windows 10 install GPU-Z
 
 ![image](uploads/fc5745a7ff92aa34bf3db2abb7a8b997/image.png)
 
-save you're bios
+* save your bios
 
-OTHER OPTIONS 1:
+**OTHER OPTIONS 1:**
 
-Download the ROM [https://www.techpowerup.com/vgabios/](https://www.techpowerup.com/vgabios/)
+Download the ROM [https://www.techpowerup.com/vgabios/ ](https://www.techpowerup.com/vgabios/)
 
-OTHER OPTIONS 2:
+But I would **recommend** you the other option.  (**dump your own rom,** than you are sure you have the right one)
+
+**OTHER OPTIONS 2:**
 
 Dumping the rom in linux: Download the following:
 
-NVIDIA: [https://www.techpowerup.com/download/nvidia-nvflash/](https://www.techpowerup.com/download/nvidia-nvflash/)
+NVIDIA: <https://www.techpowerup.com/download/nvidia-nvflash/>
 
-AMD: [https://www.techpowerup.com/download/ati-atiflash/](https://www.techpowerup.com/download/ati-atiflash/)
+AMD: <https://www.techpowerup.com/download/ati-atiflash/>
 
-Open a TTY ctrl alt f2 (can be differ from distro)
+* Open a TTY ctrl alt f2 (can be different from distro)
 
-Stop the windows manager sudo systemctl stop gdm
 
-unload the nvida module sudo rmod nvidia
+* Stop the display manager:  **sudo systemctl stop gdm** (can be different like: gdm, sddm , lightdm ... depending on your display manager)
 
-chmod nvflash / atiflash chmod u+x
 
-execute the following command: sudo ./nvflash_linux --save .rom
+* Unload the nvida modules: **sudo rmmod** _nvidia, nvidia_uvm, nvidia_modeset_
 
-Load the nvida module modprobe nvidia
 
-Load the windows manager sudo systemctl start gdm
+* **Make sure you are in the correct directory + have the correct name of the file for the _NEXT STEP_.** 
+
+
+* Make the file executable with the command: **chmod nvflash**  (make sure the name of the file is correct, otherwise your chmod will not work)
+* **chmod atiflash** 
+* **chmod u+x**
+
+
+* Execute the following command: **sudo ./nvflash_linux --save test.rom** (name can be different just choose a random name for your **ROM** to **save** in this case **_test.rom_**_) _
+
+
+* Load the nvida module: **sudo modprobe** _nvidia,nvidia_uvm, nvidia_modeset_
+
+Load the windows manager **sudo systemctl start gdm**
 
 **GENERAL**
 
@@ -40,7 +52,7 @@ Load the windows manager sudo systemctl start gdm
 
 Patch the rom with a hexeditor. Like okteta. Looking with Char for video.
 
-Note please turn on overwrite mode! (Edit / Overwrite mode or press insert)
+Note please turn on **OVERWRITE** mode or press **INSERT**! 
 
 ![image](uploads/b56e21f062af2d86374656bb5df541d2/image.png)
 
@@ -55,9 +67,9 @@ Remove everything above the U. Save
 - cd /var/lib/libvirt/vbios
 - sudo chmod -R 660 `<ROMFILE>`rom
 - sudo chown username:username `<ROMFILE>`.rom
-- sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/`<ROMFILE>`.rom 
+- sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vbios/`<ROMFILE>`.rom
 - sudo restorecon -v /var/lib/libvirt/vbios/`<ROMFILE>`.rom
- 
+
 **GENERAL (like other systems with apparmor)**
 
 * sudo mkdir /usr/share/vgabios
