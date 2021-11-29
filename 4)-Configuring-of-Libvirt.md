@@ -6,7 +6,7 @@ Installing the packages:
 
 **ARCH LINUX / MANJARO**
 
-sudo pacman -S virt-manager qemu vde2 ebtables dnsmasq bridge-utils openbsd-netcat ovmf
+sudo pacman -S virt-manager qemu vde2 dnsmasq bridge-utils ovmf
 
 **FEDORA**
 
@@ -24,6 +24,8 @@ sudo zypper in libvirt libvirt-client libvirt-daemon virt-manager virt-install v
 
 **GENERAL**
 
+**EDIT LIBVIRTD.CONF**
+
 sudo nano /etc/libvirt/libvirtd.conf
 
 uncommend the # off the follow lines:
@@ -34,15 +36,15 @@ uncommend the # off the follow lines:
 **IMPORTANT you need this for logs.**
 
 Last lines at the end of the file\
-\`\`\`\
-log_filters="1:qemu"\
-log_outputs="1:file:/var/log/libvirt/libvirtd.log"
+\
+_log_filters="1:qemu"\
+log_outputs="1:file:/var/log/libvirt/libvirtd.log"_
 
-\`\`\`
+* sudo usermod -a -G libvirt $(whoami)
+* sudo systemctl start libvirtd
+* sudo systemctl enable libvirtd
 
-- sudo usermod -a -G libvirt $(whoami)
-- sudo systemctl start libvirtd
-- sudo systemctl enable libvirtd
+**EDIT QEMU.CONF**
 
 sudo nano /etc/libvirt/qemu.conf
 
