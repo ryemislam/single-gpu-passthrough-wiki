@@ -1,4 +1,4 @@
-\*\*ONLY for NVIDIA and normally only needed with older drivers but I would still just edit it. \*\*
+**ONLY for NVIDIA and normally only needed with older drivers but I would still just edit it.**
 
 - sudo su
 - export EDITOR=nano
