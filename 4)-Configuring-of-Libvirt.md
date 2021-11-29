@@ -6,19 +6,19 @@ Installing the packages:
 
 **ARCH LINUX / MANJARO**
 
-sudo pacman -S virt-manager qemu vde2 dnsmasq bridge-utils ovmf
+* sudo pacman -S virt-manager qemu vde2 dnsmasq bridge-utils ovmf
 
 **FEDORA**
 
-sudo dnf install @virtualization
+* sudo dnf install @virtualization
 
 **POPOS! / UBUNTU / Linux Mint**
 
-sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager ovmf
+* sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager ovmf
 
 **Opensuse**
 
-sudo zypper in libvirt libvirt-client libvirt-daemon virt-manager virt-install virt-viewer qemu qemu-kvm qemu-ovmf-x86_64 qemu-tools
+* sudo zypper in libvirt libvirt-client libvirt-daemon virt-manager virt-install virt-viewer qemu qemu-kvm qemu-ovmf-x86_64 qemu-tools
 
 **This step is needed to use Virtual Machine Manager under user rights and adding logs**
 
