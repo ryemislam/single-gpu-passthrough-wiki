@@ -44,7 +44,7 @@ IOMMU Group 9:
         01:00.1 Audio device [0403]: NVIDIA Corporation GP106 High Definition Audio Controller [10de:10f1] (rev a1)
 ```
 
-**Group 9**: Is the perfect example how your GPU group should look like in most cases. Some _NVIDIA cards_ will have 4 devices in the group. _Make sure you add them all! _
+**Group 9**: Is the perfect example how your GPU group should look like in most cases. Some _NVIDIA cards_ will have 4 devices in the group. **MAKE SURE YOU ADD THEM ALL!**
 
 **DON'T ADD BRIDGES**
 
