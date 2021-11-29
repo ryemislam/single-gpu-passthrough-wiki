@@ -30,7 +30,9 @@ sudo nano /etc/libvirt/libvirtd.conf
 
 uncommend the # off the follow lines:
 
-- unix_sock_group = "libvirt"
+* unix_sock_group = "libvirt"
+
+
 - unix_sock_rw_perms = "0770"
 
 **IMPORTANT you need this for logs.**
@@ -46,11 +48,11 @@ log_outputs="1:file:/var/log/libvirt/libvirtd.log"_
 
 **EDIT QEMU.CONF**
 
-sudo nano /etc/libvirt/qemu.conf
+* sudo nano /etc/libvirt/qemu.conf
 
-edit the follow lines #user = "root" to user = "your username" #group = "root" to group = "your username"
+edit the following lines #user = "root" to user = "your username" #group = "root" to group = "your username"
 
-sudo systemctl restart libvirtd
+* sudo systemctl restart libvirtd
 
 **Note specific:** Linux Mint / Ubuntu / Popos!
 
