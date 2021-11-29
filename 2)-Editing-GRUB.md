@@ -4,11 +4,13 @@ Editing GRUB
 
 ### Enable IOMMU
 
-Set `intel_iommu=on` or `amd_iommu=on` respective to your system in grub config 
+Set the parameter `intel_iommu=on` or `amd_iommu=on` respective to your system in grub config
 
-Set `iommu=pt` in grub config for safety reasons
+Set the parameter `iommu=pt` in grub config for safety reasons
 
-EXAMPLE OF GRUB
+You can add this parameter `video=efifb:off` fixes issues that few people have with returning back to the host. (Mostly AMD users)
+
+**EXAMPLE OF GRUB**
 
 * sudo nano /etc/default/grub
 
@@ -20,7 +22,7 @@ EXAMPLE OF GRUB
 
 **ARCH LINUX:**
 
-EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt"
+EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="**_amd_iommu=on iommu=pt_**"
 
 UPDATE GRUB:
 
@@ -28,7 +30,7 @@ UPDATE GRUB:
 
 **MANJARO**
 
-EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt quiet apparmor=1 security=apparmor udev.log_priority=3"
+EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="**_amd_iommu=on iommu=pt_** quiet apparmor=1 security=apparmor udev.log_priority=3"
 
 UPDATE GRUB:
 
@@ -36,7 +38,7 @@ UPDATE GRUB:
 
 **FEDORA**
 
-EDIT LINE: GRUB_CMDLINE_LINUX="resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap amd_iommu=on iommu=pt quiet"
+EDIT LINE: GRUB_CMDLINE_LINUX="resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap **_amd_iommu=on iommu=pt_** quiet"
 
 UPDATE GRUB:
 
@@ -44,7 +46,7 @@ UPDATE GRUB:
 
 **POPOS!**
 
-EDIT LINE: options root=UUID=211de945-3abe-4b4e-87f1-4ec1a062d9b6 ro quiet loglevel=0 systemd.show_status=false amd_iommu=on iommu=pt splash
+EDIT LINE: options root=UUID=211de945-3abe-4b4e-87f1-4ec1a062d9b6 ro quiet loglevel=0 systemd.show_status=false **_amd_iommu=on iommu=pt_** splash
 
 UPDATE GRUB:
 
@@ -52,7 +54,7 @@ UPDATE GRUB:
 
 **Ubuntu / Linux Mint**
 
-EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt video=efifb:off quiet splash"
+EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="**_amd_iommu=on iommu=pt_** quiet splash"
 
 UPDATE GRUB:
 
@@ -60,7 +62,7 @@ UPDATE GRUB:
 
 **Opensuse**
 
-EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt splash=silent resume=/dev/disk/by-uuid/1652c07d-e2ba-4161-af2f-3e874eedfe1a mitigations=auto quiet"
+EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="**_amd_iommu=on iommu=pt_** splash=silent resume=/dev/disk/by-uuid/1652c07d-e2ba-4161-af2f-3e874eedfe1a mitigations=auto quiet"
 
 UPDATE GRUB:
 
