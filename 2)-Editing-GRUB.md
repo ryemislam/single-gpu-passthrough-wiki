@@ -4,7 +4,7 @@ Editing GRUB
 
 ### Enable IOMMU
 
-Set the parameter `intel_iommu=on` or `amd_iommu=on` respective to your system in grub config
+Set the parameter `intel_iommu=on` or `amd_iommu=on` respective to your system in the grub config
 
 Set the parameter `iommu=pt` in grub config for safety reasons
 
