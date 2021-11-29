@@ -1,5 +1,3 @@
-scripts & logfiles
-
 GENERAL
 
 Study this url https://gitlab.com/risingprismtv/single-gpu-passthrough
