@@ -4,6 +4,8 @@
 - export EDITOR=nano
 - virsh edit win10
 
+**Other option, add this lines through the Virt-Manager _application_ itself.**
+
 Edit or add the following lines:
 
 ```plaintext
