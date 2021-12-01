@@ -28,7 +28,7 @@ Installing the packages:
 
 sudo nano /etc/libvirt/libvirtd.conf
 
-uncommend the # off the follow lines:
+uncomment the # off the following lines:
 
 * unix_sock_group = "libvirt"
 
@@ -37,7 +37,7 @@ uncommend the # off the follow lines:
 
 **IMPORTANT you need this for logs.**
 
-Last lines at the end of the file\
+Add this lines at the end of the file\
 \
 _log_filters="1:qemu"\
 log_outputs="1:file:/var/log/libvirt/libvirtd.log"_
