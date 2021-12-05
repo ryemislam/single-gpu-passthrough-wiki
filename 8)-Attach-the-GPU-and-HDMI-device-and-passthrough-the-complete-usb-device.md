@@ -10,7 +10,7 @@ Optional only needed when you need a rom file.
 </hostdev>
 
 
-**ARCH / FEDORA** (or other distro without apparmor like selinux)
+**FEDORA** (or other distro without apparmor like selinux)
 
 ![image](uploads/ec7bccb488dc1ef5c4ea16034e1d9055/image.png)
 
@@ -18,7 +18,7 @@ add this line
 `<rom file='/var/lib/libvirt/vbios/<romfile>.rom'/> `
 
 
-**POPOS! / Ubuntu / Linux Mint / MANJARO / OPENSUSE (or other apparmor distro)**
+**POPOS! / Ubuntu / Linux Mint / ARCH / OPENSUSE (or other apparmor distro)**
 
 ![2020-12-15_22-21](uploads/508daeed4e2ebcfae09b8b1f7f119877/2020-12-15_22-21.png)
 
