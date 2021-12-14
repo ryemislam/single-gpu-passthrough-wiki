@@ -82,7 +82,7 @@ sudo groups $(whoami)
 ```
 It should return your current users groups like so.
 
-`wheel username libvirt`
+`username libvirt`etc...
 
 &nbsp;
 
@@ -127,7 +127,7 @@ sudo groups $(whoami)
 ```
 It should return your current users groups like so.
 
-`wheel username libvirt kvm`
+`username libvirt kvm`etc...
 
 &nbsp;
 
