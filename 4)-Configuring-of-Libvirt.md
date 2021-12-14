@@ -73,14 +73,16 @@ sudo systemctl start libvirtd
 ``` bash
 sudo systemctl enable libvirtd
 ```
-You can verify libvirt has been added to your users groups by using the following command.\
+
+&nbsp;
+
+You can verify libvirt has been added to your users groups by using the following command.
 ```bash
 sudo groups $(whoami)
 ```
 It should return your current users groups like so.
 
 `wheel username libvirt`
-
 
 &nbsp;
 
