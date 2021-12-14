@@ -97,10 +97,10 @@ sudo nano /etc/libvirt/qemu.conf
 Edit the following lines.
 
 ``` bash
-#user = "root"` to `user = "your username"
+#user = "root" to user = "your username"
 ```
 ``` bash
-#group = "root"` to `group = "your username"
+#group = "root" to group = "your username"
 ```
 
 &nbsp;
