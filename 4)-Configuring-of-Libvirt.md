@@ -3,7 +3,7 @@
 
 ### <ins>ARCH LINUX / MANJARO</ins>
 ``` bash
-sudo pacman -S virt-manager qemu vde2 dnsmasq bridge-utils ovmf
+sudo pacman -S virt-manager qemu vde2 ebtables iptables dnsmasq bridge-utils ovmf
 ```
 
 ### <ins>FEDORA</ins>
