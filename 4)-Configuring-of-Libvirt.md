@@ -121,7 +121,7 @@ sudo usermod -a -G kvm,libvirt $(whoami)
 
 &nbsp;
 
-You can verify libvirt has been added to your users groups by using the following command.
+You can verify libvirt and kvm has been added to your users groups by using the following command.
 ```bash
 sudo groups $(whoami)
 ```
