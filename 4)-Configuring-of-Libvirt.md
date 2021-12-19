@@ -5,6 +5,12 @@
 ``` bash
 sudo pacman -S virt-manager qemu vde2 ebtables iptables dnsmasq bridge-utils ovmf
 ```
+**Please note:** there may be conflicts when installing these programs.\
+Something like the below example may apear in your terminal.
+
+`:: iptables-nft and iptables are in conflict. Remove iptables? [y/N]`
+
+If you do encounter this message, press `y` and `enter` to continue the install. 
 
 ### <ins>FEDORA</ins>
 **Please note:** check out the link below if your using fedora. It will help you going forward.\
