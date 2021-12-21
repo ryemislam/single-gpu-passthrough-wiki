@@ -3,12 +3,12 @@
 
 ### <ins>ARCH LINUX / MANJARO</ins>
 ``` bash
-sudo pacman -S virt-manager qemu vde2 ebtables iptables dnsmasq bridge-utils ovmf
+sudo pacman -S virt-manager qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf
 ```
 **Please note:** there may be conflicts when installing these programs.\
 Something like the below example may apear in your terminal.
 
-`:: iptables-nft and iptables are in conflict. Remove iptables? [y/N]`
+`:: iptables and iptables-nft are in conflict. Remove iptables? [y/N]`
 
 If you do encounter this message, press `y` and `enter` to continue the install. 
 
