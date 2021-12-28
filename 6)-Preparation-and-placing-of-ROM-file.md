@@ -4,8 +4,8 @@
 
 EASY WAY
 
+windows 10 can be booted from usb with hirensboot pe. https://www.hirensbootcd.org/download/
 start windows 10 and install GPU-Z
-windows 10 can be also a hirensboot pe. https://www.hirensbootcd.org/download/
 
 ![image](uploads/fc5745a7ff92aa34bf3db2abb7a8b997/image.png)
 
