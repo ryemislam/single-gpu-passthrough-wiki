@@ -1,25 +1,38 @@
-GENERAL
+We will now install the startup and teardown scripts for the VM, as well as the qemu hook. Everything will be automated thanks to the installation script available in the RisingPrism repo.
 
-Study this url https://gitlab.com/risingprismtv/single-gpu-passthrough
+*Note for AMD users: If the RisingPrism scripts do not work, use the [akshaycodes scripts](https://gitlab.com/akshaycodes/vfio-script) instead.*
 
-Download the files and unzip them. Copy the hooks directory /etc/libvirt/hooks
+## Cloning the repo
 
-sudo cp -r hooks/ /etc/libvirt/
+The first step of the installation is to recoverer the repository containing the files. Go in the folder of your choice, and [clone the repository using git](https://git-scm.com/docs/git-clone
+):
 
-Run the script with ./install_hooks.sh with root rights
+```
+git clone https://gitlab.com/risingprismtv/single-gpu-passthrough.git
+```
 
-Check the scripts are in place.
+In the newly created `single-gpu-passthrough` folder, run the installation as root:
 
-    /etc/systemd/system/libvirt-nosleep@.service
-    /bin/vfio-startup.sh
-    /bin/vfio-teardown.sh
-    /etc/libvirt/hooks/qemu
+```
+sudo chmod +x install_hooks.sh
+sudo ./install_hooks.sh
+```
 
-NOTE:
+Verify that the files are installed correctly. You should have files in the following location:
+```
+/etc/systemd/system/libvirt-nosleep@.service
+/bin/vfio-startup.sh
+/bin/vfio-teardown.sh
+/etc/libvirt/hooks/qemu
+```
 
-The place of the log files are
+## Location of Libvirtd's log files
 
-    win10.log You can find them in /var/log/libvirt/qemu
-    custom_hooks.log. You can find them in /var/log/libvirt
-    libvirtd.log You can find them in /var/log/libvirt/
+If you followed step 1.2 in part 4), you should be able to find your logs in `/var/log/libvirt/` folder:
+```
+win10.log        => /var/log/libvirt/qemu
+custom_hooks.log => /var/log/libvirt/
+libvirtd.log     => /var/log/libvirt/
+```
 
+*Note for akshaycodes scripts users: `custom_hooks.log` is located in `/var/tmp/vfio-script.log` instead of the usual location*

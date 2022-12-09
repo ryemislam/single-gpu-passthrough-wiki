@@ -1,8 +1,8 @@
-**GENERAL**
+In this step, you'll need to gather infos about your GPU. Your PCI devices are divided in groups, called IOMMU Groups. Your GPU is in one, or multiple of these groups, and you need to pass to the VM the entirety of the group that contains your GPU.
 
-Use this script:
+Use this script to list all your groups (copy-paste it in your commandline):
 
-```plaintext
+```bash
 #!/bin/bash
 shopt -s nullglob
 for g in /sys/kernel/iommu_groups/*; do
@@ -13,9 +13,10 @@ for g in /sys/kernel/iommu_groups/*; do
 done;
 ```
 
-output in my case:
+<details>
+   <summary>You will get an output similar to this one:</summary>
 
-```plaintext
+<pre>
 IOMMU Group 0:
         00:00.0 Host bridge [0600]: Intel Corporation 4th Gen Core Processor DRAM Controller [8086:0c00] (rev 06)
 IOMMU Group 1:
@@ -38,13 +39,28 @@ IOMMU Group 8:
         00:1f.0 ISA bridge [0601]: Intel Corporation B85 Express LPC Controller [8086:8c50] (rev 05)
         00:1f.2 SATA controller [0106]: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] [8086:8c02] (rev 05)
         00:1f.3 SMBus [0c05]: Intel Corporation 8 Series/C220 Series Chipset Family SMBus Controller [8086:8c22] (rev 05)
-IOMMU Group 9:
+<strong>IOMMU Group 9:
         01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP106 [GeForce GTX 1060 6GB] [10de:1c03] (rev a1)
-        01:00.1 Audio device [0403]: NVIDIA Corporation GP106 High Definition Audio Controller [10de:10f1] (rev a1)
-```
+        01:00.1 Audio device [0403]: NVIDIA Corporation GP106 High Definition Audio Controller [10de:10f1] (rev a1)</strong>
+</pre>
+</details>
 
-**Group 9**: Is the perfect example how your GPU group should look like in most cases. Some _NVIDIA cards_ will have 4 devices in the group. **MAKE SURE YOU ADD THEM ALL!**
+**Group 9** is a good example of how your GPU group should look in a perfect case. Some NVIDIA cards will have 4 devices in the group, you will need to pass them all.
 
-**AMD users** can have there GPU and AUDIO device in different IOMMU group but that is still fine.
+If your devices were in 2 different groups like this...:
 
-**DON'T ADD BRIDGES**
+<pre>
+IOMMU Group 8:
+        00:1f.0 ISA bridge [0601]: Intel Corporation B85 Express LPC Controller [8086:8c50] (rev 05)
+        <strong>01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP106 [GeForce GTX 1060 6GB] [10de:1c03] (rev a1)</strong>
+        00:1f.2 SATA controller [0106]: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] [8086:8c02] (rev 05)
+        00:1f.3 SMBus [0c05]: Intel Corporation 8 Series/C220 Series Chipset Family SMBus Controller [8086:8c22] (rev 05)
+IOMMU Group 9:
+        <strong>01:00.1 Audio device [0403]: NVIDIA Corporation GP106 High Definition Audio Controller [10de:10f1] (rev a1)</strong>
+</pre>
+
+...you need to pass both the entirety of group **8**, AND **9** in your VM
+
+For now, take note of the devices in these groups and which one you should add so your passed groups are viable. We will need these infos for later when configuring Virtual Machine Manager. 
+
+And remember for later, **DO NOT ADD BRIDGES** to your VM, that means devices like `PCI bridge [0604]` in your groups

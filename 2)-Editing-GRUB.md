@@ -1,73 +1,92 @@
-**ARCH / MANJARO / FEDORA / UBUNTU / LINUX MINT / OPENSUSE**
+## Enable IOMMU
 
-Editing GRUB
+Set the parameter respective to your system in the grub config:
 
-### Enable IOMMU
+| AMD CPU        | Intel CPU        |
+|:--------------:|:----------------:|
+| `amd_iommu=on` | `intel_iommu=on` |
 
-Set the parameter `intel_iommu=on` or `amd_iommu=on` respective to your system in the grub config
+Set the parameter `iommu=pt` in grub config for safety reasons, regardless of CPU type
 
-Set the parameter `iommu=pt` in grub config for safety reasons
+Mostly for AMD users, the parameter `video=efifb:off` can fix issues when returning back to the host, it is recommended that you add it.
 
-You can add this parameter `video=efifb:off` fixes issues that few people have with returning back to the host. (Mostly AMD users)
+<details> 
+  <summary><strong>Example of an edited grub file</strong></summary>
+  <img src="uploads/a827fb07cae2163c98f8fb132b262d78/image.png">
+</details>
 
-**EXAMPLE OF GRUB**
+The default path, for distros that aren't listed below, is `/etc/default/grub`, to update it after you edited the file, run `sudo grub-mkconfig` or **search for your distro specific grub update command**
 
-* sudo nano /etc/default/grub
+<details> 
+  <summary><strong>Ubuntu, Linux Mint, or any debian based distro</strong></summary>
 
-![image](/risingprismtv/single-gpu-passthrough/-/wikis/uploads/a827fb07cae2163c98f8fb132b262d78/image.png)
+  Run <code>sudo nano /etc/default/grub</code>
 
-**popos!**
+  Edit the line that starts with <code>GRUB_CMDLINE_LINUX</code> so it ressembles something like this, keeping the previous parameters:
 
-* sudo nano /boot/efi/loader/entries/Pop_OS-current.conf
+  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>amd_iommu=on iommu=pt</strong> quiet splash"</code>
 
-**ARCH LINUX:**
+  Update grub with the command <code>sudo update-grub</code>
+</details>
 
-EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="**_amd_iommu=on iommu=pt_**"
+<details> 
+  <summary><strong>Arch linux, and most Arch based distros</strong></summary>
 
-UPDATE GRUB:
+  Run <code>sudo nano /etc/default/grub</code>
 
-* sudo grub-mkconfig -o /boot/grub/grub.cfg
+  Edit the line that starts with <code>GRUB_CMDLINE_LINUX_DEFAULT</code> so it ressembles something like this, keeping any previous parameters if there is any:
 
-**MANJARO**
+  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>amd_iommu=on iommu=pt</strong>"</code>
 
-EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="**_amd_iommu=on iommu=pt_** quiet apparmor=1 security=apparmor udev.log_priority=3"
+  Update grub with the command <code>sudo grub-mkconfig -o /boot/grub2/grub.cfg</code>
+</details>
 
-UPDATE GRUB:
+<details> 
+  <summary><strong>Fedora, and Fedora based distros</strong></summary>
 
-* sudo update-grub
+  Run <code>sudo nano /etc/default/grub</code>
 
-**FEDORA**
+  Edit the line that starts with <code>GRUB_CMDLINE_LINUX</code> so it ressembles something like this, keeping the previous parameters:
 
-EDIT LINE: GRUB_CMDLINE_LINUX="resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap **_amd_iommu=on iommu=pt_** quiet"
+  <code>GRUB_CMDLINE_LINUX="resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap <strong>amd_iommu=on iommu=pt</strong> quiet"</code>
 
-UPDATE GRUB:
+  <a href="https://fedoraproject.org/wiki/GRUB_2#Updating_the_GRUB_configuration_file">Update grub</a> with the command <code>sudo grub2-mkconfig -o /boot/grub2/grub.cfg</code> for Fedora 34 and up, <code>sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg</code> for Fedora 33 and lower
+</details>
 
-* sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+<details> 
+  <summary><strong>Pop!_OS</strong></summary>
 
-**POPOS!**
+  Run <code>sudo nano /boot/efi/loader/entries/Pop_OS-current.conf</code>
 
-EDIT LINE: options root=UUID=211de945-3abe-4b4e-87f1-4ec1a062d9b6 ro quiet loglevel=0 systemd.show_status=false **_amd_iommu=on iommu=pt_** splash
+  Edit the line that starts with <code>options</code> so it ressembles something like this, keeping the previous parameters: 
+  
+  <code>options root=UUID=211de945-3abe-4b4e-87f1-4ec1a062d9b6 ro quiet loglevel=0 systemd.show_status=false <strong>amd_iommu=on iommu=pt</strong> splash</code>
+  
+  Update grub with the command <code>sudo bootctl update</code>
+</details>
 
-UPDATE GRUB:
+<details> 
+  <summary><strong>Manjaro</strong></summary>
 
-* sudo bootctl update
+  Run <code>sudo nano /etc/default/grub</code>
 
-**Ubuntu / Linux Mint**
+  Edit the line that starts with <code>GRUB_CMDLINE_LINUX_DEFAULT</code> so it ressembles something like this, keeping the previous parameters:
 
-EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="**_amd_iommu=on iommu=pt_** quiet splash"
+  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>amd_iommu=on iommu=pt</strong> quiet apparmor=1 security=apparmor udev.log_priority=3"</code>
 
-UPDATE GRUB:
+  Update grub with the command <code>sudo update-grub</code>
+</details>
 
-* sudo update-grub
+<details> 
+  <summary><strong>OpenSuse</strong></summary>
 
-**Opensuse**
+  Run <code>sudo nano /etc/default/grub</code>
 
-EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="**_amd_iommu=on iommu=pt_** splash=silent resume=/dev/disk/by-uuid/1652c07d-e2ba-4161-af2f-3e874eedfe1a mitigations=auto quiet"
+  Edit the line that starts with <code>GRUB_CMDLINE_LINUX_DEFAULT</code> so it ressembles something like this, keeping the previous parameters:
 
-UPDATE GRUB:
+  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>amd_iommu=on iommu=pt</strong> splash=silent resume=/dev/disk/by-uuid/1652c07d-e2ba-4161-af2f-3e874eedfe1a mitigations=auto quiet"</code>
 
-* sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+  Update grub with the command <code>sudo grub2-mkconfig -o /boot/grub2/grub.cfg</code>
+</details>
 
-**IMPORTANT:**
-
-REBOOT
+**IMPORTANT: REBOOT** your system to apply the new changes.
