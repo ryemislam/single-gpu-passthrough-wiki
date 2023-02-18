@@ -39,7 +39,7 @@ Press "Add Hardware", navigate to "PCI Host Device", and in the list that is pre
 
 Go in the XML tab of your newly added GPU, and add the following line:
 ```
-<rom file='/usr/share/patched.rom'/>
+<rom file='/usr/share/vgabios/patched.rom'/>
 ```
 Again, ***please edit this line depending on the steps you followed previously, at step 6) of this guide***, this is the path for most distros. You should end up with this:
 
