@@ -159,6 +159,8 @@ If you still have access to Windows on your system:
     <img src="uploads/fc5745a7ff92aa34bf3db2abb7a8b997/image.png"/>
     <br>
     This should save a vbios file for you. Keep it safe on a USB stick or external drive, to transfer it on Linux later. You can keep Windows opened for the next step, as you can edit your vbios using <a href='https://mh-nexus.de/en/hxd/'>HxD</a> instead of Okteta.
+    <br>
+    <b>Note: It seems that versions of GPU-Z after 2.5.0 have trouble dumping vbios, please be sure to use version 2.5.0 until this issue is resolved</b>
 </details>
 
 Or, if you don't have access to Windows anymore, and that the Linux method didn't work:
@@ -218,7 +220,7 @@ Place your patched ROM in the newly created directory, and sets its permissions:
 <pre>
 cp ./patched.rom /usr/share/vgabios/
 cd /usr/share/vgabios
-sudo chmod -R 660 patched.rom
+sudo chmod -R 644 patched.rom
 sudo chown yourusername:yourusername patched.rom
 </pre>
 </details>
@@ -232,7 +234,7 @@ Place your patched ROM in the newly created directory, and sets its permissions:
 <pre>
 cp ./patched.rom /var/lib/libvirt/vgabios/
 cd /var/lib/libvirt/vgabios/
-sudo chmod -R 660 patched.rom
+sudo chmod -R 644 patched.rom
 sudo chown yourusername:yourusername patched.rom
 </pre>
 Set the SELinux context for the file:
