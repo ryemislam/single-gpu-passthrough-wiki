@@ -240,7 +240,7 @@ sudo chown yourusername:yourusername patched.rom
 Set the SELinux context for the file:
 <pre>
 sudo semanage fcontext -a -t virt_image_t /var/lib/libvirt/vgabios/patched.rom
-sudo restorecon -v /var/lib/libvirt/vbios/patched.rom
+sudo restorecon -v /var/lib/libvirt/vgabios/patched.rom
 </pre>
 </details>
 
