@@ -2,11 +2,11 @@
 
 Set the parameter respective to your system in the grub config:
 
-| AMD CPU        | Intel CPU        |
-|:--------------:|:----------------:|
-| `amd_iommu=on` | `intel_iommu=on` |
+| AMD CPU                                        | Intel CPU        |
+|:----------------------------------------------:|:----------------:|
+| Kernel auto-detects if IOMMU is enabled in BIOS | `intel_iommu=on` |
 
-Set the parameter `iommu=pt` in grub config for safety reasons, regardless of CPU type
+More info: [Arch Wiki Enabling IOMMU](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Enabling_IOMMU)
 
 Mostly for AMD users, the parameter `video=efifb:off` can fix issues when returning back to the host, it is recommended that you add it.
 
