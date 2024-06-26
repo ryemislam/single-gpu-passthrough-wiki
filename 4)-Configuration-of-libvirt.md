@@ -125,7 +125,7 @@ user = "root"
 group = "root"
 ```
 
-And replace `root` with your username:
+And replace `root` with your username and your main user group:
 
 ```bash
 user = "your username"
@@ -133,6 +133,7 @@ user = "your username"
 ``` bash
 group = "your username"
 ```
+**Note:** On most distros, the main user group is simply your username, but in certain cases it is something else like "users", you can check your current user groups with the `groups` command 
 
 <details>
     <summary>Example of a correctly edited file</summary>
