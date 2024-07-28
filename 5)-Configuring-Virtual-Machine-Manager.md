@@ -24,6 +24,8 @@ Next step is memory, in this screen, ***DO NOT SET THE VM TO USE YOUR WHOLE RAM*
 
 Step forward, and you will get a summary of your settings. <strong style="color:red">Before proceeding be sure to check "Customize configuration before install".</strong> Also, verify that your VM is named "win10".
 
+**NOTE:** It is **IMPORTANT** that your VM stays named as "win10", because this is the name targeted by the libvirt hook we install on your system. **If you want a custom name, you can change or add the new name to the hook, situated at `/etc/libvirt/hooks/qemu`.**
+
 ![Summary](images/vmm_name.png)
 
 **For the followings editions, don't forget to hit "Apply" at the bottom right after each step.**
