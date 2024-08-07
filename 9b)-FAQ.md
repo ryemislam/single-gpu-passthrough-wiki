@@ -18,9 +18,9 @@ I get a blackscreen/console when I start my VM, and my libvirtd logs say&nbsp;<c
 
 <details>
   <summary>I want to hide my KVM from anti-cheats and the like</summary>
-  <strong style="color: red">RisingPrismTV and the RisingPrism discord will not take responsibility for any game account or damage done to your VM. If you attempt these steps you, you understand the risk involved.</strong>
+  <strong>RisingPrismTV and the RisingPrism discord staff will not take responsibility for any game account or damage done to your VM. If you attempt these steps you, you understand the risk involved. We will not provide support.</strong>
 
-  A good point to start KVM hiding is watching&nbsp;<a href='https://youtu.be/L1JCCdo1bG4'>Mutah's video</a> on the subject, as he goes in details on how to do so
+  A good point to start KVM hiding is ~~watching&nbsp;<a href='https://youtu.be/L1JCCdo1bG4'>Mutah's video</a> on the subject~~, as he goes in details on how to do so (UPDATE: The methods in the video are outdated, but we're keeping it since it's still a good resource)
 
   Another step you can take (especially for EAC now detecting VMs) is adding&nbsp;<code>&lt;smbios mode="host"/></code> to the <code>&lt;os></code> section of your KVM XML.
   
@@ -40,6 +40,7 @@ I get a blackscreen/console when I start my VM, and my libvirtd logs say&nbsp;<c
     &lt;vendor_id state="on" value="randomid"/>
     &lt;frequencies state="off"/>
   &lt;/hyperv></pre>
+  You can also checkout the documentation of VRChat about this: [https://docs.vrchat.com/docs/using-vrchat-in-a-virtual-machine](https://docs.vrchat.com/docs/using-vrchat-in-a-virtual-machine)
 </details>
 <details>
   <summary>My VM is having some slowdowns, what can I do to mitigate this?</summary>
