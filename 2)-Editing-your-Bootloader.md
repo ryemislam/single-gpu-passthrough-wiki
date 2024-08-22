@@ -1,4 +1,9 @@
+---
+title: 2) Editing your Bootloader
+---
 ## Enable IOMMU
+
+Most distros use GRUB as a bootloader, but these instructions work as well for sytemd-boot, for an example of systemd-boot, check the Pop!_OS example below (it's basically the same as GRUB really)
 
 Set the parameter respective to your system in the grub config:
 
@@ -24,7 +29,7 @@ The default path, for distros that aren't listed below, is `/etc/default/grub`, 
 
   Edit the line that starts with <code>GRUB_CMDLINE_LINUX</code> so it ressembles something like this, keeping the previous parameters:
 
-  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>amd_iommu=on</strong> quiet splash"</code>
+  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>intel_iommu=on</strong> quiet splash"</code>
 
   Update grub with the command <code>sudo update-grub</code>
 </details>
@@ -36,7 +41,7 @@ The default path, for distros that aren't listed below, is `/etc/default/grub`, 
 
   Edit the line that starts with <code>GRUB_CMDLINE_LINUX_DEFAULT</code> so it ressembles something like this, keeping any previous parameters if there is any:
 
-  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>amd_iommu=on</strong>"</code>
+  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>intel_iommu=on/strong>"</code>
 
   Update grub with the command <code>sudo grub-mkconfig -o /boot/grub2/grub.cfg</code>
 </details>
@@ -48,7 +53,7 @@ The default path, for distros that aren't listed below, is `/etc/default/grub`, 
 
   Edit the line that starts with <code>GRUB_CMDLINE_LINUX</code> so it ressembles something like this, keeping the previous parameters:
 
-  <code>GRUB_CMDLINE_LINUX="resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap <strong>amd_iommu=on</strong> quiet"</code>
+  <code>GRUB_CMDLINE_LINUX="resume=/dev/mapper/fedora_localhost--live-swap rd.lvm.lv=fedora_localhost-live/root rd.lvm.lv=fedora_localhost-live/swap <strong>intel_iommu=on</strong> quiet"</code>
 
   <a href="https://fedoraproject.org/wiki/GRUB_2#Updating_the_GRUB_configuration_file">Update grub</a> with the command <code>sudo grub2-mkconfig -o /boot/grub2/grub.cfg</code> for Fedora 34 and up, <code>sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg</code> for Fedora 33 and lower
 </details>
@@ -60,19 +65,21 @@ The default path, for distros that aren't listed below, is `/etc/default/grub`, 
 
   Edit the line that starts with <code>options</code> so it ressembles something like this, keeping the previous parameters: 
   
-  <code>options root=UUID=211de945-3abe-4b4e-87f1-4ec1a062d9b6 ro quiet loglevel=0 systemd.show_status=false <strong>amd_iommu=on</strong> splash</code>
+  <code>options root=UUID=211de945-3abe-4b4e-87f1-4ec1a062d9b6 ro quiet loglevel=0 systemd.show_status=false <strong>intel_iommu=on</strong> splash</code>
   
   Update grub with the command <code>sudo bootctl update</code>
 </details>
 
 <details> 
   <summary><strong>Manjaro</strong></summary>
+  
+  <a href="https://manjarno.pages.dev/">Avoid using Manjaro</a>, as it has many issues.
 
   Run <code>sudo nano /etc/default/grub</code>
 
   Edit the line that starts with <code>GRUB_CMDLINE_LINUX_DEFAULT</code> so it ressembles something like this, keeping the previous parameters:
 
-  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>amd_iommu=on</strong> quiet apparmor=1 security=apparmor udev.log_priority=3"</code>
+  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>intel_iommu=on</strong> quiet apparmor=1 security=apparmor udev.log_priority=3"</code>
 
   Update grub with the command <code>sudo update-grub</code>
 </details>
@@ -84,7 +91,7 @@ The default path, for distros that aren't listed below, is `/etc/default/grub`, 
 
   Edit the line that starts with <code>GRUB_CMDLINE_LINUX_DEFAULT</code> so it ressembles something like this, keeping the previous parameters:
 
-  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>amd_iommu=on</strong> splash=silent resume=/dev/disk/by-uuid/1652c07d-e2ba-4161-af2f-3e874eedfe1a mitigations=auto quiet"</code>
+  <code>GRUB_CMDLINE_LINUX_DEFAULT="<strong>intel_iommu=on</strong> splash=silent resume=/dev/disk/by-uuid/1652c07d-e2ba-4161-af2f-3e874eedfe1a mitigations=auto quiet"</code>
 
   Update grub with the command <code>sudo grub2-mkconfig -o /boot/grub2/grub.cfg</code>
 </details>
