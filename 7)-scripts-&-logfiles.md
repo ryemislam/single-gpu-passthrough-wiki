@@ -21,8 +21,8 @@ sudo ./install_hooks.sh
 Verify that the files are installed correctly. You should have files in the following location:
 ```
 /etc/systemd/system/libvirt-nosleep@.service
-/bin/vfio-startup.sh
-/bin/vfio-teardown.sh
+/usr/local/bin/vfio-startup
+/usr/local/bin/vfio-teardown
 /etc/libvirt/hooks/qemu
 ```
 
